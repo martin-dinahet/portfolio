@@ -1,63 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #24273a;
   scroll-behavior: smooth;
-  box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-
-  background-color: white;
-  padding: 1rem 0;
-
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  margin: 1.5rem 2.5rem;
+}
+
+#logo {
+  font-size: 2rem;
+  color: #c29df1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+#nav-item {
+  font-size: 1.5rem;
+  color: #f3bce6;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2.5rem;
+}
+
+#welcome {
+  margin-top: 15rem;
+  margin-left: 2.5rem;
+}
+
+#title {
+  color: white;
+  font-size: 10rem;
+  font-weight: 800;
+}
+
+span {
+  color: #c29df1;
+}
+
+#first-article {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-header > #title {
-  padding-left: 1.5rem;
-  color: black;
-  text-decoration: none;
-  font-size: 2rem;
+#first-article > #icon {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-header > nav {
-  padding-right: 1.5rem;
-}
-
-header > nav > #link {
-  color: black;
-  text-decoration: none;
-  padding-left: 0.5rem;
-}
-
-main {
-  scroll-behavior: smooth;
-  overflow: auto;
-  scroll-snap-type: mandatory y;
-}
-
-section {
-  height: 100vh;
-  width: 100vw;
-  scroll-snap-align: start;
-}
-
-section#a {
-  background-color: blue;
-}
-
-section#b {
-  background-color: green;
-}
-
-section#c {
-  background-color: red;
+#first-article > #icon > i {
+  margin-right: 1rem;
 }
