@@ -39,6 +39,10 @@ nav {
   margin-left: 2.5rem;
 }
 
+section {
+  height: 100%;
+}
+
 #welcome {
   margin-top: 10%;
   margin-left: 2.5rem;
@@ -76,18 +80,36 @@ span {
   border: 3px solid #c29df1;
   font-size: 1.2rem;
   font-weight: 600;
-  padding: 0.6rem;
+  padding: 0.6rem 1rem;
   border-radius: 50px;
   margin-right: 0.8rem;
 }
 
+#first-article > #container > #contact > i {
+  margin-right: 1rem;
+}
+
+#first-article > #container > #my-work > i {
+  margin-right: 1rem;
+}
+
 #first-article > #container > #my-work {
-  color: #24273a;
-  background-color: #f3bce6;
+  color: #f3bce6;
+  background-color: #24273a;
   text-decoration: none;
   border: 3px solid #f3bce6;
   font-size: 1.2rem;
   font-weight: 600;
   padding: 0.6rem 1rem;
   border-radius: 50px;
+}
+
+#first-article > #container > #contact:hover {
+  color: #24273a;
+  background-color: #c29df1;
+}
+
+#first-article > #container > #my-work:hover {
+  color: #24273a;
+  background-color: #f3bce6;
 }
