@@ -54,18 +54,40 @@ span {
   color: #c29df1;
 }
 
-#first-article {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 #first-article > #icon {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
+  margin-left: 0.5rem;
 }
 
 #first-article > #icon > i {
-  margin-right: 1rem;
+  color: #f3bce6;
+  margin-right: 0.5rem;
+}
+
+#first-article > #container {
+  margin-top: 2rem;
+}
+
+#first-article > #container > #contact {
+  color: #c29df1;
+  text-decoration: none;
+  border: 3px solid #c29df1;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.6rem;
+  border-radius: 50px;
+  margin-right: 0.8rem;
+}
+
+#first-article > #container > #my-work {
+  color: #24273a;
+  background-color: #f3bce6;
+  text-decoration: none;
+  border: 3px solid #f3bce6;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
 }
