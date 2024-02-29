@@ -96,9 +96,16 @@
     margin-bottom: 0.6rem;
     text-align: center;
     margin-right: 1rem;
+    transition: linear 100ms;
+  }
+
+  a:hover {
+    color: #1e1e2e;
+    background-color: #a6adc8;
+    border-color: #a6adc8;
   }
 
   i {
-    margin-right: 0.3rem;
+    margin-right: 0.5rem;
   }
 }
