@@ -29,11 +29,6 @@
     margin-bottom: 0.6rem;
   }
 
-  #container {
-    display: flex;
-    flex-direction: column;
-  }
-
   a {
     color: #cdd6f4;
     width: 13rem;
