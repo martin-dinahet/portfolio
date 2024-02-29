@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1920px) {
   * {
     margin: 0;
     padding: 0;
@@ -96,5 +96,9 @@
     margin-bottom: 0.6rem;
     text-align: center;
     margin-right: 1rem;
+  }
+
+  i {
+    margin-right: 0.3rem;
   }
 }
