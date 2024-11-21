@@ -35,7 +35,7 @@ export const Header = (): React.JSX.Element => {
   ];
 
   return (
-    <div className={cn("flex w-full p-2 justify-between sticky")}>
+    <div className={cn("flex w-full p-2 justify-between sticky top-0")}>
       <a href="#" className={cn(buttonVariants({ variant: "ghost" }))}>
         <Terminal />
         <span className={cn("text-xl")}>Martin Dinahet</span>
@@ -48,9 +48,8 @@ export const Header = (): React.JSX.Element => {
               href={item.href}
               className={cn(
                 buttonVariants({ variant: "ghost" }),
-                "flex items-center px-3 py-2 text-sm font-medium",
-              )}
-            >
+                "flex items-center px-3 py-2 text-sm font-medium"
+              )}>
               <item.icon className="w-4 h-4 mr-2" />
               {item.label}
             </a>

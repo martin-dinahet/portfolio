@@ -14,15 +14,14 @@ export const HeroSection = (): React.JSX.Element => {
           text="Transforming Ideas into Digital Experiences"
         />
         <p className="text-xl text-gray-600 mb-8">
-          Full-stack developer turning complex challenges into intuitive
-          solutions
+          Full-stack developer turning complex challenges into intuitive solutions
         </p>
 
         <div className="w-full flex justify-center mb-8">
           <img
             src="/pfp.jpg"
             alt="profile picture"
-            className="w-64 h-64 object-cover rounded-full"
+            className="w-64 h-64 object-cover rounded-full hidden"
           />
         </div>
 
@@ -53,28 +52,21 @@ export const HeroSection = (): React.JSX.Element => {
             text="Transforming Ideas into Digital Experiences"
           />
           <p className="text-2xl text-gray-600">
-            Full-stack developer turning complex challenges into intuitive
-            solutions
+            Full-stack developer turning complex challenges into intuitive solutions
           </p>
-          <ul className={cn("flex space-x-2 mt-4")}>
+          <ul className={cn("flex space-x-2 mt-[5rem]")}>
             <li>
               <a href="" className={cn(buttonVariants({ variant: "default" }))}>
                 See my profile
               </a>
             </li>
             <li>
-              <a
-                href=""
-                className={cn(buttonVariants({ variant: "secondary" }))}
-              >
+              <a href="" className={cn(buttonVariants({ variant: "secondary" }))}>
                 Github
               </a>
             </li>
             <li>
-              <a
-                href=""
-                className={cn(buttonVariants({ variant: "secondary" }))}
-              >
+              <a href="" className={cn(buttonVariants({ variant: "secondary" }))}>
                 LinkedIn
               </a>
             </li>
@@ -84,7 +76,7 @@ export const HeroSection = (): React.JSX.Element => {
           <img
             src="/pfp.jpg"
             alt="profile picture"
-            className="w-full rounded-full shadow-2xl"
+            className="w-full rounded-full shadow-2xl hidden"
           />
         </div>
       </div>
