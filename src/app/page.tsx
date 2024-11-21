@@ -10,7 +10,7 @@ const Page = (): React.JSX.Element => {
     <div className={cn("w-screen h-screen")}>
       <Header />
       <HeroSection />
-      <AboutMeSection />
+      {/* <AboutMeSection /> */}
     </div>
   );
 };
