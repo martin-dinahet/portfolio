@@ -1,23 +1,17 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { MenuItem } from "@/lib/types";
 import { buttonVariants } from "@/components/ui/button";
-import { LucideProps, Terminal } from "lucide-react";
+import { Terminal } from "lucide-react";
 import { BurgerMenu } from "@/components/punpun/BurgerMenu";
 import { Home } from "lucide-react";
 import { FileUser } from "lucide-react";
 import { Briefcase } from "lucide-react";
 import { AppWindowMac } from "lucide-react";
 import { ThemeSwitcher } from "@/components/punpun/ThemeSwitcher";
-import { ForwardRefExoticComponent, RefAttributes } from "react";
 
-export interface MenuItem {
-  icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
-  label: string;
-  href: string;
-}
-
-const Header = (): React.JSX.Element => {
+export const Header = (): React.JSX.Element => {
   const menuItems: Array<MenuItem> = [
     {
       icon: Home,
@@ -69,5 +63,3 @@ const Header = (): React.JSX.Element => {
     </div>
   );
 };
-
-export default Header;

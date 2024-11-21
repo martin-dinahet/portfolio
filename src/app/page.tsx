@@ -1,9 +1,9 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Header from "@/components/punpun/Header";
-import HeroSection from "@/components/punpun/HeroSection";
-import AboutMeSection from "@/components/punpun/AboutMeSection";
+import { Header } from "@/components/punpun/Header";
+import { HeroSection } from "@/components/punpun/HeroSection";
+import { AboutMeSection } from "@/components/punpun/AboutMeSection";
 
 const Page = (): React.JSX.Element => {
   return (

@@ -2,9 +2,9 @@
 
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
-import SparklesText from "../ui/sparkles-text";
+import { SparklesText } from "../ui/sparkles-text";
 
-const HeroSection = (): React.JSX.Element => {
+export const HeroSection = (): React.JSX.Element => {
   return (
     <div className="flex flex-col md:flex-row p-6 mt-[8rem]">
       {/* Mobile: Stacked Vertical Layout */}
@@ -21,7 +21,7 @@ const HeroSection = (): React.JSX.Element => {
           <img
             src="/pfp.jpg"
             alt="profile picture"
-            className="w-64 h-64 object-cover rounded-full hidden"
+            className="w-64 h-64 object-cover rounded-full"
           />
         </div>
 
@@ -73,15 +73,9 @@ const HeroSection = (): React.JSX.Element => {
           </ul>
         </div>
         <div className="w-1/3">
-          <img
-            src="/pfp.jpg"
-            alt="profile picture"
-            className="w-full rounded-full shadow-2xl hidden"
-          />
+          <img src="/pfp.jpg" alt="profile picture" className="w-full rounded-full shadow-2xl" />
         </div>
       </div>
     </div>
   );
 };
-
-export default HeroSection;

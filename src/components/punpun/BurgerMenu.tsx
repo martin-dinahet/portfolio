@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
+import { MenuItem } from "@/lib/types";
+import { BurgerMenuProps } from "@/lib/types";
 import { Sheet } from "@/components/ui/sheet";
 import { SheetTrigger } from "@/components/ui/sheet";
 import { SheetContent } from "@/components/ui/sheet";
@@ -9,11 +11,6 @@ import { SheetHeader } from "@/components/ui/sheet";
 import { SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
-import { MenuItem } from "./Header";
-
-interface BurgerMenuProps {
-  items: Array<MenuItem>;
-}
 
 export const BurgerMenu = ({ items }: BurgerMenuProps): React.JSX.Element => {
   const [open, setOpen] = useState<boolean>(false);
