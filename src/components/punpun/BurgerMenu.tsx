@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Sheet } from "@/components/ui/sheet";
 import { SheetTrigger } from "@/components/ui/sheet";
@@ -9,9 +9,10 @@ import { SheetHeader } from "@/components/ui/sheet";
 import { SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import { MenuItem } from "./Header";
 
 interface BurgerMenuProps {
-  items: Array<any>;
+  items: Array<MenuItem>;
 }
 
 export const BurgerMenu = ({ items }: BurgerMenuProps): React.JSX.Element => {
@@ -32,13 +33,12 @@ export const BurgerMenu = ({ items }: BurgerMenuProps): React.JSX.Element => {
         <div className={cn("flex flex-col h-full")}>
           <nav className="flex-1 overflow-y-auto">
             <ul className="pt-4 space-y-2">
-              {items.map((item: any, key: number) => (
+              {items.map((item: MenuItem, key: number) => (
                 <li key={key}>
                   <a
                     href={item.href}
                     className="flex items-center p-2 hover:bg-accent rounded-lg transition-colors duration-200"
-                    onClick={() => setOpen(false)}
-                  >
+                    onClick={() => setOpen(false)}>
                     <item.icon className={cn("mr-3 h-5 w-5")} />
                     <span>{item.label}</span>
                   </a>

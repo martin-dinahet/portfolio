@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Card } from "@/components/ui/card";
 
-export const AboutMeSection = () => {
+const AboutMeSection = () => {
   return (
     <>
       <div className={cn("w-full p-6 mt-[5rem]")}>
@@ -13,3 +13,5 @@ export const AboutMeSection = () => {
     </>
   );
 };
+
+export default AboutMeSection;

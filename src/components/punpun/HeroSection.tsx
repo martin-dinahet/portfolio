@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
 import SparklesText from "../ui/sparkles-text";
 
-export const HeroSection = (): React.JSX.Element => {
+const HeroSection = (): React.JSX.Element => {
   return (
     <div className="flex flex-col md:flex-row p-6 mt-[8rem]">
       {/* Mobile: Stacked Vertical Layout */}
@@ -83,3 +83,5 @@ export const HeroSection = (): React.JSX.Element => {
     </div>
   );
 };
+
+export default HeroSection;
