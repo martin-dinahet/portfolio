@@ -72,7 +72,7 @@ export const HeroSection = (): React.JSX.Element => {
             </li>
           </ul>
         </div>
-        <div className="w-1/3">
+        <div className="w-1/5">
           <img src="/pfp.jpg" alt="profile picture" className="w-full rounded-full shadow-2xl" />
         </div>
       </div>
