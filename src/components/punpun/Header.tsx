@@ -36,7 +36,7 @@ export const Header = (): React.JSX.Element => {
   ];
 
   return (
-    <div className={cn("flex w-full p-2 justify-between sticky top-0")}>
+    <div className={cn("flex w-full p-2 justify-between bg-background sticky top-0")}>
       <a href="#" className={cn(buttonVariants({ variant: "ghost" }))}>
         <Terminal />
         <span className={cn("text-xl")}>Martin Dinahet</span>
