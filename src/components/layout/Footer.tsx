@@ -10,12 +10,12 @@ const iconMap = {
 export function Footer() {
   return (
     <footer className="py-8 border-t">
-      <div className="max-w-4xl mx-auto px-4 flex justify-between items-center">
+      <div className="flex items-center justify-between max-w-4xl px-4 mx-auto">
         <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} {PORTFOLIO_DATA.name}
         </p>
         <div className="flex gap-4">
-          {PORTFOLIO_DATA.socials.map((social) => {
+          {PORTFOLIO_DATA.links.map((social) => {
             const Icon = iconMap[social.name as keyof typeof iconMap];
             return (
               <a
@@ -23,9 +23,8 @@ export function Footer() {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Icon className="h-5 w-5" />
+                className="transition-colors text-muted-foreground hover:text-foreground">
+                <Icon className="w-5 h-5" />
               </a>
             );
           })}
