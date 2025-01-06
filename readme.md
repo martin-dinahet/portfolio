@@ -1,8 +1,91 @@
-# React + Vite
+# Portfolio (minimal implementation)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Default color scheme
 
-Currently, two official plugins are available:
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+    --card: #ffffff;
+    --card-foreground: #0a0a0a;
+    --popover: #ffffff;
+    --popover-foreground: #0a0a0a;
+    --primary: #171717;
+    --primary-foreground: #fafafa;
+    --secondary: #f5f5f5;
+    --secondary-foreground: #171717;
+    --muted: #f5f5f5;
+    --muted-foreground: #737373;
+    --accent: #f5f5f5;
+    --accent-foreground: #171717;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #e5e5e5;
+    --input: #e5e5e5;
+    --ring: #0a0a0a;
+    --chart-1: #e74c3c;
+    --chart-2: #3498db;
+    --chart-3: #2c3e50;
+    --chart-4: #f1c40f;
+    --chart-5: #e67e22;
+    --radius: 0.5rem;
+    --sidebar-background: #fafafa;
+    --sidebar-foreground: #424757;
+    --sidebar-primary: #1a1d24;
+    --sidebar-primary-foreground: #fafafa;
+    --sidebar-accent: #f4f5f7;
+    --sidebar-accent-foreground: #1a1d24;
+    --sidebar-border: #e6eaf0;
+    --sidebar-ring: #3b82f6;
+  }
+
+  .dark {
+    --background: #0a0a0a;
+    --foreground: #fafafa;
+    --card: #0a0a0a;
+    --card-foreground: #fafafa;
+    --popover: #0a0a0a;
+    --popover-foreground: #fafafa;
+    --primary: #fafafa;
+    --primary-foreground: #171717;
+    --secondary: #262626;
+    --secondary-foreground: #fafafa;
+    --muted: #262626;
+    --muted-foreground: #a3a3a3;
+    --accent: #262626;
+    --accent-foreground: #fafafa;
+    --destructive: #7f1d1d;
+    --destructive-foreground: #fafafa;
+    --border: #262626;
+    --input: #262626;
+    --ring: #d4d4d4;
+    --chart-1: #3366cc;
+    --chart-2: #33aa88;
+    --chart-3: #dd8833;
+    --chart-4: #8e44ad;
+    --chart-5: #e91e63;
+    --sidebar-background: #1a1d24;
+    --sidebar-foreground: #f4f5f7;
+    --sidebar-primary: #4361ee;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #282c34;
+    --sidebar-accent-foreground: #f4f5f7;
+    --sidebar-border: #282c34;
+    --sidebar-ring: #3b82f6;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+```
