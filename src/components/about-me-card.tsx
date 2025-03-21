@@ -15,7 +15,6 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { GithubIcon, Newspaper } from "lucide-react";
 import { LinkedinIcon } from "lucide-react";
-import { Mail } from "lucide-react";
 
 export const AboutMeCard: React.FC = () => {
   return (

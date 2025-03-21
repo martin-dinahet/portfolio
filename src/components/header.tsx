@@ -8,7 +8,7 @@ import { SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { SheetContent } from "@/components/ui/sheet";
 import { NavLink } from "react-router-dom";
-import { Briefcase, GraduationCap, House, Mail, Menu, User } from "lucide-react";
+import { Briefcase, GraduationCap, Menu, User } from "lucide-react";
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
