@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 export const MainLayout: React.FC = () => {
   return (
     <>
-      <div className="w-screen min-h-screen">
+      <div className="w-full min-h-screen">
         <ThemeProvider>
           <Header />
           <Outlet />
