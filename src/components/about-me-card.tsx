@@ -13,14 +13,14 @@ import { AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { GithubIcon } from "lucide-react";
+import { GithubIcon, Newspaper } from "lucide-react";
 import { LinkedinIcon } from "lucide-react";
 import { Mail } from "lucide-react";
 
 export const AboutMeCard: React.FC = () => {
   return (
     <>
-      <Card className="w-full grow" id="about-me">
+      <Card className="w-full" id="about-me">
         <CardHeader className="flex flex-col items-center space-y-6 px-4 sm-px-6 md-px-8">
           <Avatar className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32">
             <AvatarImage src="/martin.jpg" />
@@ -61,21 +61,29 @@ export const AboutMeCard: React.FC = () => {
           <Separator />
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
             <Button variant="secondary" className="w-full sm:w-auto" asChild>
-              <a href="https://www.github.com/martin-dinahet/">
+              <a
+                href="https://www.github.com/martin-dinahet/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <GithubIcon className="mr-2 h-4 w-4" />
                 GitHub
               </a>
             </Button>
             <Button variant="secondary" className="w-full sm:w-auto" asChild>
-              <a href="https://www.linkedin.com/in/martin-dinahet-bb4895295/">
+              <a
+                href="https://www.linkedin.com/in/martin-dinahet-bb4895295/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LinkedinIcon className="mr-2 h-4 w-4" />
                 LinkedIn
               </a>
             </Button>
             <Button variant="secondary" className="w-full sm:w-auto" asChild>
-              <a href="mailto:martin.dinahet@proton.me">
-                <Mail className="mr-2 h-4 w-4" />
-                Contact
+              <a href="/cv.pdf">
+                <Newspaper />
+                Get my Resume
               </a>
             </Button>
           </div>

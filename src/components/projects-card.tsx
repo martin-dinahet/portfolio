@@ -13,7 +13,7 @@ import { Separator } from "@/components/ui/separator";
 export const ProjectsCard: React.FC = () => {
   return (
     <>
-      <Card className="w-full lg:w-[40%] min-w-[20rem]" id="projects">
+      <Card className="w-full min-w-[20rem]" id="projects">
         <CardHeader>
           <CardTitle className="text-2xl font-bold">Featured Projects</CardTitle>
           <CardDescription>Recent work and contributions</CardDescription>

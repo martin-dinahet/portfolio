@@ -8,16 +8,14 @@ import { SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { SheetContent } from "@/components/ui/sheet";
 import { NavLink } from "react-router-dom";
-import { Briefcase, House, Mail, Menu, User } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Briefcase, GraduationCap, House, Mail, Menu, User } from "lucide-react";
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   return (
     <>
-      <header className="flex justify-between items-center px-3 py-2">
+      <header className="w-full sticky top-0 z-10 flex justify-between items-center px-3 py-2 bg-background">
         <NavLink to="/" end className="text-xl pl-2">
           martin-dinahet
         </NavLink>
@@ -35,34 +33,39 @@ export const Header: React.FC = () => {
                 <SheetTitle>Navigation Menu</SheetTitle>
               </SheetHeader>
               <nav>
-                <NavLink
-                  to="/"
-                  className={cn(buttonVariants({ variant: "ghost" }), "flex gap-3 justify-start")}
+                <Button
+                  variant="ghost"
+                  asChild
+                  className="flex gap-3 justify-start"
+                  onClick={() => setIsOpen(false)}
                 >
-                  <House />
-                  Home
-                </NavLink>
-                <NavLink
-                  to="/about"
-                  className={cn(buttonVariants({ variant: "ghost" }), "flex gap-3 justify-start")}
+                  <a href="#about-me">
+                    <User />
+                    About Me
+                  </a>
+                </Button>
+                <Button
+                  variant="ghost"
+                  asChild
+                  className="flex gap-3 justify-start"
+                  onClick={() => setIsOpen(false)}
                 >
-                  <User />
-                  About Me
-                </NavLink>
-                <NavLink
-                  to="/services"
-                  className={cn(buttonVariants({ variant: "ghost" }), "flex gap-3 justify-start")}
+                  <a href="#projects">
+                    <Briefcase />
+                    Featured projects
+                  </a>
+                </Button>
+                <Button
+                  variant="ghost"
+                  asChild
+                  className="flex gap-3 justify-start"
+                  onClick={() => setIsOpen(false)}
                 >
-                  <Briefcase />
-                  Projects
-                </NavLink>
-                <NavLink
-                  to="/contact"
-                  className={cn(buttonVariants({ variant: "ghost" }), "flex gap-3 justify-start")}
-                >
-                  <Mail />
-                  Contact
-                </NavLink>
+                  <a href="#my-experience">
+                    <GraduationCap />
+                    My Experience
+                  </a>
+                </Button>
               </nav>
             </SheetContent>
           </Sheet>

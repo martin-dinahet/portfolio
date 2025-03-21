@@ -13,7 +13,7 @@ import { Separator } from "./ui/separator";
 export const MyExperienceCard: React.FC = () => {
   return (
     <>
-      <Card className="w-full min-w-[20rem]" id="my-experience">
+      <Card className="w-full" id="my-experience">
         <CardHeader>
           <CardTitle className="text-2xl font-bold">My Experience</CardTitle>
           <CardDescription>Education and Professional Journey</CardDescription>
@@ -105,7 +105,7 @@ export const MyExperienceCard: React.FC = () => {
           <div className="space-y-6 md:w-1/2 ">
             <div className="space-y-2">
               <div className="flex items-center gap-2">
-                <GraduationCap className="text-muted-foreground" />
+                <Building className="text-muted-foreground" />
                 <div>
                   <h3 className="font-semibold">Combattant de l'Artillerie Parachutiste</h3>
                   <p className="text-sm text-muted-foreground">
