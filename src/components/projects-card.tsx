@@ -25,11 +25,7 @@ export const ProjectsCard: React.FC = () => {
                 <h3 className="font-semibold">LiteScript</h3>
                 <div className="gap-2">
                   <Button variant="ghost" size="icon">
-                    <a
-                      href="https://www.github.com/martin-dinahet/litescript/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href="https://www.github.com/martin-dinahet/litescript/">
                       <Code />
                     </a>
                   </Button>
@@ -53,20 +49,12 @@ export const ProjectsCard: React.FC = () => {
                 <h3 className="font-semibold">Snippet Manager</h3>
                 <div className="flex gap-2">
                   <Button variant="ghost" size="icon">
-                    <a
-                      href="https://www.github.com/martin-dinahet/snippet-manager/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href="https://www.github.com/martin-dinahet/snippet-manager/">
                       <Code />
                     </a>
                   </Button>
                   <Button variant="ghost" size="icon">
-                    <a
-                      href="https://www.martin-dinahet-snippet-manager.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href="https://www.martin-dinahet-snippet-manager.vercel.app/">
                       <Globe />
                     </a>
                   </Button>
