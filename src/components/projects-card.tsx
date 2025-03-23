@@ -54,7 +54,7 @@ export const ProjectsCard: React.FC = () => {
                     </a>
                   </Button>
                   <Button variant="ghost" size="icon">
-                    <a href="https://www.martin-dinahet-snippet-manager.vercel.app/">
+                    <a href="https://martin-dinahet-snippet-manager.vercel.app/">
                       <Globe />
                     </a>
                   </Button>
@@ -88,7 +88,7 @@ export const ProjectsCard: React.FC = () => {
                   </Button>
                   <Button variant="ghost" size="icon">
                     <a
-                      href="https://www.martin-dinahet-pre-flight-checklist.vercel.app/"
+                      href="https://martin-dinahet-pre-flight-checklist.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
