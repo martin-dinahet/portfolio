@@ -8,6 +8,8 @@
   default: true;
   prefersdark: true;
   color-scheme: "light";
+
+  /* Colors */
   --color-base-100: oklch(91.637% 0.034 90.515);
   --color-base-200: oklch(88.272% 0.049 91.774);
   --color-base-300: oklch(84.133% 0.065 90.856);
@@ -28,12 +30,20 @@
   --color-warning-content: oklch(96% 0.059 95.617);
   --color-error: oklch(70% 0.191 22.216);
   --color-error-content: oklch(40% 0.123 38.172);
+
+  /* Border radius */
   --radius-selector: 0.25rem;
   --radius-field: 0.25rem;
   --radius-box: 0.5rem;
+
+  /* Base sizes */
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
+
+  /* Border size */
   --border: 1px;
+
+  /* Effects */
   --depth: 0;
   --noise: 0;
 }
