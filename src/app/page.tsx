@@ -2,7 +2,7 @@ import type { FC } from "react";
 
 const HomePage: FC = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <div className="flex h-screen items-center justify-center">
       <div className="card card-border w-lg">
         <div className="card-body flex w-full flex-col gap-4">
           <div className="skeleton h-32 w-full"></div>

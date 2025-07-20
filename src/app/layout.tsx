@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { FC, PropsWithChildren } from "react";
+import { Page } from "@/components/layout/page";
 
 import "@/tailwind.css";
 
@@ -71,7 +72,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
       <body className="min-h-screen w-screen antialiased">
-        <main>{children}</main>
+        <Page>{children}</Page>
       </body>
     </html>
   );
