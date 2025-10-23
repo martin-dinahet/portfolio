@@ -23,7 +23,7 @@ const HomePage: FC = () => {
               >
                 Voir mes projets
               </Link>
-              <Link href="/cv.pdf" className="btn btn-primary w-full sm:w-auto">
+              <Link href="/cv-martin-dinahet-alternance-web-dev.pdf" className="btn btn-primary w-full sm:w-auto">
                 Voir mon CV
               </Link>
               <Link
