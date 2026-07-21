@@ -2,16 +2,140 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
+    <meta content="index, follow, max-image-preview:large" name="robots">
     <link href="/favicon.svg" rel="icon" type="image/svg+xml">
+    <link href="/site.webmanifest" rel="manifest">
+    <link href="https://dinahet.dev/" rel="canonical">
     <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+    <meta content="#f7f2e8" name="theme-color">
     <meta
-      content="Martin Dinahet, développeur fullstack à Paris. Expérience Histia, OpenSprint, TypeScript, React, Next.js, backend et architecture propre."
+      content="Portfolio de Martin Dinahet, développeur fullstack à Paris. TypeScript, React, Next.js, Hono, Prisma, PostgreSQL, Clean Architecture, Docker et Kubernetes."
       name="description"
     >
+    <meta
+      content="Martin Dinahet, développeur fullstack à Paris, TypeScript, React, Next.js, backend, Clean Architecture, OpenSprint"
+      name="keywords"
+    >
+    <meta content="Martin Dinahet" name="author">
+    <meta content="Martin Dinahet" name="creator">
+    <meta content="Martin Dinahet" name="publisher">
+    <meta content="fr_FR" property="og:locale">
+    <meta content="website" property="og:type">
+    <meta content="https://dinahet.dev/" property="og:url">
+    <meta content="Martin Dinahet · Développeur Fullstack à Paris" property="og:title">
+    <meta
+      content="Portfolio de Martin Dinahet : développement fullstack TypeScript, React, Next.js, backend, données, architecture propre et mise en production."
+      property="og:description"
+    >
+    <meta content="https://dinahet.dev/og-image.svg" property="og:image">
+    <meta content="1200" property="og:image:width">
+    <meta content="630" property="og:image:height">
+    <meta content="Aperçu du portfolio de Martin Dinahet, développeur fullstack à Paris" property="og:image:alt">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="https://dinahet.dev/" name="twitter:url">
+    <meta content="Martin Dinahet · Développeur Fullstack à Paris" name="twitter:title">
+    <meta
+      content="Portfolio de Martin Dinahet : TypeScript, React, Next.js, backend, Clean Architecture et OpenSprint."
+      name="twitter:description"
+    >
+    <meta content="https://dinahet.dev/og-image.svg" name="twitter:image">
     <title>Martin Dinahet · Développeur Fullstack</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://dinahet.dev/#person",
+            "name": "Martin Dinahet",
+            "url": "https://dinahet.dev/",
+            "email": "mailto:martin.dinahet@proton.me",
+            "jobTitle": "Développeur fullstack",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Paris",
+              "addressCountry": "FR"
+            },
+            "knowsAbout": [
+              "TypeScript",
+              "React",
+              "Next.js",
+              "Hono",
+              "Prisma",
+              "PostgreSQL",
+              "Clean Architecture",
+              "CQRS",
+              "Docker",
+              "Kubernetes"
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/martin-dinahet",
+              "https://github.com/martin-dinahet",
+              "https://opensprint.dinahet.dev"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://dinahet.dev/#website",
+            "url": "https://dinahet.dev/",
+            "name": "Portfolio de Martin Dinahet",
+            "inLanguage": "fr-FR",
+            "publisher": {
+              "@id": "https://dinahet.dev/#person"
+            }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://dinahet.dev/#profile",
+            "url": "https://dinahet.dev/",
+            "name": "Martin Dinahet · Développeur Fullstack",
+            "description": "Portfolio de Martin Dinahet, développeur fullstack à Paris spécialisé en TypeScript, React, Next.js, backend et architecture propre.",
+            "inLanguage": "fr-FR",
+            "isPartOf": {
+              "@id": "https://dinahet.dev/#website"
+            },
+            "about": {
+              "@id": "https://dinahet.dev/#person"
+            },
+            "mainEntity": {
+              "@id": "https://dinahet.dev/#person"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://dinahet.dev/#opensprint",
+            "name": "OpenSprint",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "url": "https://opensprint.dinahet.dev",
+            "creator": {
+              "@id": "https://dinahet.dev/#person"
+            },
+            "description": "Plateforme open source de gestion de projet utilisée en production par une startup."
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main>
+        <h1>Martin Dinahet, développeur fullstack à Paris</h1>
+        <p>
+          Portfolio de Martin Dinahet : TypeScript, React, Next.js, Hono, Prisma,
+          PostgreSQL, Clean Architecture, CQRS, Docker, Kubernetes et mise en production.
+        </p>
+        <p>
+          Projet principal : OpenSprint, plateforme open source de gestion de projet
+          disponible sur opensprint.dinahet.dev.
+        </p>
+        <p>
+          Contact : martin.dinahet@proton.me · LinkedIn :
+          linkedin.com/in/martin-dinahet · GitHub : github.com/martin-dinahet
+        </p>
+      </main>
+    </noscript>
     <script src="/src/main.tsx" type="module"></script>
   </body>
 </html>

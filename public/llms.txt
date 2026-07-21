@@ -1,0 +1,16 @@
+# Martin Dinahet
+
+Portfolio personnel de Martin Dinahet, développeur fullstack à Paris.
+
+## Profil
+
+Martin Dinahet travaille sur des applications web fullstack avec TypeScript, React, Next.js, Hono, Prisma, PostgreSQL, Clean Architecture, CQRS, Docker et Kubernetes.
+
+## Projet principal
+
+OpenSprint est une plateforme open source de gestion de projet utilisée en production par une startup.
+
+- Site : https://opensprint.dinahet.dev
+- LinkedIn : https://www.linkedin.com/in/martin-dinahet
+- GitHub : https://github.com/martin-dinahet
+- Contact : martin.dinahet@proton.me

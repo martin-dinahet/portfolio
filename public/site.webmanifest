@@ -1,0 +1,19 @@
+{
+  "name": "Martin Dinahet · Développeur Fullstack",
+  "short_name": "Martin Dinahet",
+  "description": "Portfolio de Martin Dinahet, développeur fullstack à Paris.",
+  "lang": "fr-FR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f2e8",
+  "theme_color": "#f7f2e8",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "48x46",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

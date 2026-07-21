@@ -258,7 +258,7 @@ h3 {
 }
 
 h1 {
-  max-width: 11ch;
+  max-width: 13ch;
   font-size: var(--text-display);
   font-weight: 650;
   line-height: 0.98;

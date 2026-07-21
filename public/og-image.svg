@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Martin Dinahet · Développeur Fullstack à Paris</title>
+  <desc id="desc">Image de partage pour le portfolio de Martin Dinahet.</desc>
+  <rect width="1200" height="630" fill="#f7f2e8"/>
+  <path d="M0 510 C180 430 315 470 475 388 C662 292 795 325 960 236 C1063 180 1129 120 1200 88 L1200 630 L0 630 Z" fill="#e1f1ef"/>
+  <path d="M828 80 h196 c52 0 86 56 61 101 l-94 168 c-26 46 8 103 61 103 h74 c41 0 68 44 48 80 l-8 14 c-17 31-50 50-86 50 H874 c-52 0-86-56-61-101 l94-168 c26-46-8-103-61-103 h-18 c-39 0-64-42-45-76 l8-14 c8-15 22-28 37-34 Z" fill="#863bff"/>
+  <circle cx="966" cy="225" r="96" fill="#47bfff" opacity=".72"/>
+  <circle cx="1030" cy="420" r="130" fill="#7e14ff" opacity=".16"/>
+  <g fill="#181314">
+    <text x="86" y="124" font-family="Georgia, 'Times New Roman', serif" font-size="30">Portfolio · Paris</text>
+    <text x="82" y="244" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="700">Martin Dinahet</text>
+    <text x="86" y="326" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">Développeur fullstack</text>
+  </g>
+  <g fill="#4a3d40" font-family="Inter, Arial, sans-serif" font-size="30">
+    <text x="86" y="414">TypeScript · React · Next.js · Backend</text>
+    <text x="86" y="462">Clean Architecture · PostgreSQL · Docker</text>
+  </g>
+  <text x="86" y="552" fill="#863bff" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">dinahet.dev</text>
+</svg>

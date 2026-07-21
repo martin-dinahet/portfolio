@@ -3,24 +3,28 @@ import type { FC } from "react";
 const links = [
   {
     label: "CV",
+    ariaLabel: "Télécharger le CV de Martin Dinahet",
     href: "/cv-martin-dinahet-fullstack-webdev.pdf",
   },
   {
     label: "LinkedIn",
+    ariaLabel: "Voir le profil LinkedIn de Martin Dinahet",
     href: "https://www.linkedin.com/in/martin-dinahet",
   },
   {
     label: "Email",
+    ariaLabel: "Envoyer un email à Martin Dinahet",
     href: "mailto:martin.dinahet@proton.me",
   },
   {
     label: "GitHub",
+    ariaLabel: "Voir le profil GitHub de Martin Dinahet",
     href: "https://github.com/martin-dinahet",
   },
 ];
 
 export const IndexPage: FC = () => (
-  <main className="site-shell">
+  <main className="site-shell" itemScope itemType="https://schema.org/ProfilePage">
     <nav className="nav-edge" aria-label="Navigation principale">
       <a className="wordmark" href="#accueil" aria-label="Martin Dinahet">
         Martin Dinahet
@@ -28,10 +32,11 @@ export const IndexPage: FC = () => (
       <div className="nav-links">
         {links.map((link) => (
           <a
+            aria-label={link.ariaLabel}
             className="nav-contact"
             href={link.href}
             key={link.label}
-            rel={link.href.startsWith("http") ? "noreferrer" : undefined}
+            rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
             target={link.href.startsWith("http") ? "_blank" : undefined}
           >
             {link.label}
@@ -42,7 +47,9 @@ export const IndexPage: FC = () => (
 
     <section className="hero-letter motion-block" id="accueil" aria-labelledby="hero-title">
       <p className="salutation">Martin Dinahet · Paris</p>
-      <h1 id="hero-title">Développeur Fullstack.</h1>
+      <h1 id="hero-title" itemProp="headline">
+        Martin Dinahet, développeur fullstack.
+      </h1>
       <p className="hero-note">
         Je cherche un premier poste fullstack après 6 mois de stage dans une startup parisienne.
         J’aime construire des applications web lisibles, avec une base technique propre : interface,
@@ -50,7 +57,11 @@ export const IndexPage: FC = () => (
       </p>
     </section>
 
-    <section className="section experience motion-block" aria-labelledby="experience-title">
+    <section
+      className="section experience motion-block"
+      id="experience"
+      aria-labelledby="experience-title"
+    >
       <h2 id="experience-title">Expérience</h2>
       <div className="body-copy">
         <p>
@@ -80,9 +91,10 @@ export const IndexPage: FC = () => (
           <strong> shadcn/ui</strong>.
         </p>
         <a
+          aria-label="Voir OpenSprint, projet open source de Martin Dinahet"
           className="text-link"
           href="https://opensprint.dinahet.dev"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           Voir OpenSprint
@@ -90,7 +102,11 @@ export const IndexPage: FC = () => (
       </div>
     </section>
 
-    <section className="section skills motion-block" aria-labelledby="skills-title">
+    <section
+      className="section skills motion-block"
+      id="competences"
+      aria-labelledby="skills-title"
+    >
       <h2 id="skills-title">Compétences</h2>
       <div className="body-copy">
         <p>
@@ -104,14 +120,18 @@ export const IndexPage: FC = () => (
 
     <section className="contact-letter motion-block" id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Discutons simplement.</h2>
-      <p>Je serais heureux d’échanger autour d’un poste de développeur fullstack.</p>
+      <p itemProp="description">
+        Je serais heureux d’échanger autour d’un poste de développeur fullstack à Paris ou en
+        remote.
+      </p>
       <nav className="contact-links" aria-label="Liens de contact">
         {links.map((link) => (
           <a
+            aria-label={link.ariaLabel}
             className="contact-email"
             href={link.href}
             key={link.label}
-            rel={link.href.startsWith("http") ? "noreferrer" : undefined}
+            rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
             target={link.href.startsWith("http") ? "_blank" : undefined}
           >
             {link.label}
