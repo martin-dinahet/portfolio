@@ -1,0 +1,15 @@
+{
+  "date": "2026-07-21",
+  "fontStack": "No app font import detected; browser/default stack currently implied.",
+  "palette": "OKLCH shadcn/Tailwind custom properties in src/globals.css.",
+  "motion": "motion-cut; no framer-motion, motion, gsap, lenis, lottie-react, react-spring, or auto-animate dependency detected.",
+  "spacing": "Tailwind v4 present; no custom spacing scale detected.",
+  "framework": "Vite + React",
+  "preserve": ["Tailwind/shadcn entry stylesheet", "OKLCH token approach", "motion-cut stance"],
+  "introduce": [
+    "French portfolio page structure",
+    "portable tokens.css",
+    "Hallmark project memory",
+    "restrained interaction states"
+  ]
+}
