@@ -63,17 +63,22 @@ jobs:
             ${{ env.IMAGE_NAME }}:${{ github.sha }}
 
       - name: Install SSH key
+        env:
+          VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          VPS_HOST: ${{ secrets.VPS_HOST }}
         run: |
           install -m 700 -d ~/.ssh
-          printf '%s\n' "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/vps_key
+          printf '%s' "$VPS_SSH_KEY" | sed 's/\\n/\n/g' | tr -d '\r' > ~/.ssh/vps_key
+          printf '\n' >> ~/.ssh/vps_key
           chmod 600 ~/.ssh/vps_key
-          ssh-keyscan -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts
+          ssh-keygen -y -f ~/.ssh/vps_key > /dev/null
+          ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts
 
       - name: Upload compose file
         run: |
-          ssh -i ~/.ssh/vps_key "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" "mkdir -p '${STACK_DIR}'"
-          scp -i ~/.ssh/vps_key compose.prod.yml "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:${STACK_DIR}/compose.yml"
+          ssh -i ~/.ssh/vps_key -o IdentitiesOnly=yes "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" "mkdir -p '${STACK_DIR}'"
+          scp -i ~/.ssh/vps_key -o IdentitiesOnly=yes compose.prod.yml "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:${STACK_DIR}/compose.yml"
 
       - name: Deploy on VPS
         run: |
-          ssh -i ~/.ssh/vps_key "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" "cd '${STACK_DIR}' && docker compose pull && docker compose up -d --remove-orphans && docker image prune -f"
+          ssh -i ~/.ssh/vps_key -o IdentitiesOnly=yes "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" "cd '${STACK_DIR}' && docker compose pull && docker compose up -d --remove-orphans && docker image prune -f"
