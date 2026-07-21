@@ -1,0 +1,11 @@
+services:
+  app:
+    image: ghcr.io/martin-dinahet/portfolio:latest
+    container_name: portfolio
+    restart: unless-stopped
+    networks:
+      - frontend
+
+networks:
+  frontend:
+    external: true
